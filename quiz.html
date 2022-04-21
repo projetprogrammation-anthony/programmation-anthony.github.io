@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor=3BF1FC>
+  <h1>QUIZ SUR LA PROGRAMMATION</h1>
+  
+  <label>1. C'est quoi le nom du code utilisé pour des sites-webs?</label><br>
+  <input type=radio name="question1" value="wrong">HTLM<br>
+  <input type=radio name="question1" value="wrong">HLTM<br>
+  <input type=radio name="question1" value="right">HTML<br><br>
+  
+  <label>2. Qu'est-ce qu'on tape quand on veut faire un commentaire sur JS?</label><br>
+  <input type=text id="answer2"><br><br>
+  
+  <label>3. Coche seulement les options qui font parti du code Javascript</label><br>
+  <input type="checkbox" id="chk3" name="chkquestion" value="right">var<br>
+  <input type="checkbox" id="chk3" name="chkquestion" value="wrong">h1<br>
+  <input type="checkbox" id="chk3" name="chkquestion" value="right">function<br>
+  <input type="checkbox" id="chk3" name="chkquestion" value="wrong">label<br>
+  <input type="checkbox" id="chk3" name="chkquestion" value="right">slice<br><br>
+  
+  <label>4. Cette question utilise quel balise? </label><br>
+  <select id="select">
+    <option value="option1">Radio</option>
+    <option value="option2">Checkbox</option>
+    <option value="option3">Select</option>
+  </select><br><br><br>
+  
+  <script src="script.js"></script>
+  
+  <input type="button" id="Resultat" onclick="correction()" value="Correction"><br>
+  <div id="results"> </div>
+  
+</body>  
+
+</html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Quiz</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -12,32 +12,41 @@
   <h1>QUIZ SUR LA PROGRAMMATION</h1>
   
   <label>1. C'est quoi le nom du code utilisé pour des sites-webs?</label><br>
-  <input type=radio name="question1" value="wrong">HTLM<br>
-  <input type=radio name="question1" value="wrong">HLTM<br>
-  <input type=radio name="question1" value="right">HTML<br><br>
+  <input type=radio id="rad1" name="question1" value="wrong">
+  <label for="rad1">HTLM</label><br>
+  <input type=radio id="rad2" name="question1" value="wrong">
+  <label for="rad2">HLTM</label><br>
+  <input type=radio id="rad3" name="question1" value="right">
+  <label for="rad3">HTML</label><br><br>
   
-  <label>2. Qu'est-ce qu'on tape quand on veut faire un commentaire sur JS?</label><br>
+  <label for="answer2">2. Qu'est-ce qu'on tape quand on veut faire un commentaire sur JS?</label><br>
   <input type=text id="answer2"><br><br>
   
   <label>3. Coche seulement les options qui font parti du code Javascript</label><br>
-  <input type="checkbox" id="chk3" name="chkquestion" value="right">var<br>
-  <input type="checkbox" id="chk3" name="chkquestion" value="wrong">h1<br>
-  <input type="checkbox" id="chk3" name="chkquestion" value="right">function<br>
-  <input type="checkbox" id="chk3" name="chkquestion" value="wrong">label<br>
-  <input type="checkbox" id="chk3" name="chkquestion" value="right">slice<br><br>
   
-  <label>4. Cette question utilise quel balise? </label><br>
+  <input type="checkbox" id="chk3" name="chkquestion" value="right">
+  <label for="chk3">var</label><br>
+  <input type="checkbox" id="chk31" name="chkquestion" value="wrong">
+  <label for="chk31">h1</label><br>
+  <input type="checkbox" id="chk32" name="chkquestion" value="right">
+  <label for="chk32">function</label><br>
+  <input type="checkbox" id="chk33" name="chkquestion" value="wrong">
+  <label for="chk33">label</label><br>
+  <input type="checkbox" id="chk34" name="chkquestion" value="right">
+  <label for="chk34">slice</label><br><br>
+  
+  <label for="select">4. Cette question utilise quel balise? </label><br>
   <select id="select">
     <option value="option1">Radio</option>
     <option value="option2">Checkbox</option>
     <option value="option3">Select</option>
   </select><br><br><br>
   
-  <script src="script.js"></script>
+  <script src="javascript files/quiz.js"></script>
   
   <input type="button" id="Resultat" onclick="correction()" value="Correction"><br>
   <div id="results"> </div>
-  
+  <h4 class="retour"><a href="index.html"> Retour au Indexe </a>
 </body>  
 
 </html>

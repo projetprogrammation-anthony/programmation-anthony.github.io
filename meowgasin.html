@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meowgasin</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>    
+    <h1>Meowgasin</h1>
+    <h2>Magasin en Ligne</h2>
+    
+    <!--Tableau pour naviguer entre les pages-->
+    <table>
+      <thead>
+        <th colspan=4>Navigation</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="meowgasin.html">Magasin</a> </td>
+          <td><a href="propos.html">À Propos de Nous</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="images/cat.gif" alt="dance" width=100>
+    <img src="images/cat.gif" alt="dance" width=100>
+    <img src="images/cat.gif" alt="dance" width=100>
+    <img src="images/cat.gif" alt="dance" width=100 class= floatRight>
+    <img src="images/cat.gif" alt="dance" width=100 class= floatRight>
+    <img src="images/cat.gif" alt="dance" width=100 class= floatRight>
+    <br><br>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>
+            <h2>Images</h2>
+          </th>
+          <th>
+            <h2>Description</h2>
+          </th>
+          <th>
+            <h2>Prix</h2>
+          </th>
+          <th>
+            <h2>Montant</h2>
+          </th>
+          <th>
+            Ajouter au Panier
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="images/catfood.png" alt="cat" width="100"> </td>
+          <td> <h3>Nourriture pour Chats </h3> <a>De la nourriture nutritif! Un goût irrésistable pour les chats et les humains. Nous ne sommes pas responsable pour n'importe quel complications sanitaires si un humain en consomme.</a></td>
+          <td> <h4>19.99$</h4>  </td>
+          <td>
+            <form>
+              x <input type="number" id="product1" min="0" max="99" value="0">
+            </form> </td>
+          <td>
+            <input type="button" id="add1" onclick="addcart1()" value="Ajouter">
+        </tr>
+      </tbody>
+    </table>
+    <div id="amountOne"></div>
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="images/mouse.jpg" alt="cat" width="130"> </td>
+          <td> <h3>Souris </h3> <a>Fait seulement avec des matériels organiques! Très durable! (pas une vraie sourie) </a></td>
+          <td> <h4> 9.99</h4>  </td>
+          <td>
+            <form>
+              x <input type="number" id="product2" min="0" max="99" value="0">
+            </form> </td>
+          <td>
+            <input type="button" id="add2" onclick="addcart2()" value="Ajouter">
+        </tr>
+      </tbody>
+    </table>
+    <div id="amountTwo"></div>
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="images/tower.jpeg" alt="cat" width="150"> </td>
+          <td> <h3>Tour </h3> <a> Une tour pour les chats. Ne laissez pas votre chat entrez dans la porte à gauche sur la boîte le plus près du sol. Nous ne savons pas où il resortirait.</a></td>
+          <td> <h4> 49.99</h4>  </td>
+          <td>
+            <form>
+              x <input type="number" id="product3" min="0" max="99" value="0">
+            </form> </td>
+          <td>
+            <input type="button" id="add3" onclick="addcart3()" value="Ajouter">
+        </tr>
+      </tbody>
+    </table>
+    <div id="amountThree"></div>
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="images/litter.jpg" alt="cat" width="150"> </td>
+          <td> <h3>Boîte Litière</h3> <a>Une boîte litière qui nettoie et se remplace la litière elle-même! Vous n'aurez jamais plus besoins d'acheter de litière ou de ramassez après votre chat, la boîte simplement absorbe ce qui est laissé dedans! Nous avons aucune idée comment ça fonctionne, mais c'est utile! S'il vous plait ne laissez aucune matière biologique dans la boîte pour plus que 10 minutes. </a></td>
+          <td> <h4> 29.99</h4>  </td>
+          <td>
+            <form>
+              x <input type="number" id="product4" min="0" max="99" value="0">
+            </form> </td>
+          <td>
+            <input type="button" id="add4" onclick="addcart4()" value="Ajouter">
+        </tr>
+      </tbody>
+    </table>
+    <div id="amountFour"></div>
+    <br>
+    <table>
+      <tbody>
+        <tr>
+          <td><img src="images/haunted.png" alt="cat" width="130"> </td>
+          <td> <h3>d̵̢̮̲̅͜ō̸̢͇͍̠͆ĺ̵̛͓̣̲l̵̬̘̆̿̽͜ </h3> <a>Personne ne sais d'où ça vient. C'est apparu un jour dans le magasin un jour et on n'arrête pas d'en trouver plus. S'il vous plaît en acheter, on ne les veut plus. Le prix élevé c'est pour payer les dommages qu'ils causent quand ils sortent de notre magasin.</a></td>
+          <td> <h4> 999.99</h4>  </td>
+          <td>
+            <form>
+              x <input type="number" id="product5" min="0" max="99" value="0">
+            </form> </td>
+          <td>
+            <input type="button" id="add5" onclick="addcart5()" value="Ajouter">
+        </tr>
+      </tbody>
+    </table>
+    <div id="amountFive"></div>
+    <br>
+    <h1>Panier</h1>
+    <table>
+      <tbody>
+        <tr>
+          <td><div id=panier1></div></td>
+          <td><div id=panier2></div></td>
+          <td><div id=panier3></div></td>
+          <td><div id=panier4></div></td>
+          <td><div id=panier5></div></td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>J'habite:</h4>
+    <table>
+      <td><input type="radio" id="tax13" name="tax" value="13" checked>
+      <label for="tax13">en Ontario</label><br>
+      <input type="radio" id="tax15" name="tax" value="15">
+      <label for="tax15">au Quebec</label></td>
+    </table>
+    <br>
+    <h4>Livraison</h4>
+    <table>
+      <td><input type="radio" id="shipping" name="ship" value="15" checked>
+      <label for="shipping">Livraison Standard 15$</label><br>
+      <input type="radio" id="shippingDeluxe" name="ship" value="40">
+      <label for="shippingDeluxe">Livraison <strong><span style="color:#BF4040">M</span><span style="color:#BF7340">E</span><span style="color:#BFA640">G</span><span style="color:#A6BF40">A</span> <span style="color:#73BF40">U</span><span style="color:#40BF40">L</span><span style="color:#40BF73">T</span><span style="color:#40BFA6">R</span><span style="color:#40A6BF">A</span> <span style="color:#4073BF">D</span><span style="color:#4040BF">E</span><span style="color:#7340BF">L</span><span style="color:#A640BF">U</span><span style="color:#BF40A6">X</span><span style="color:#BF4073">E</span></strong> 40$</label></td>
+    </table><br>
+    <table>
+      <td><input type="button" id="cost" onclick="total()" value="Calculer le total"></td>
+    </table>
+   
+    <table>
+      <td><div id="panierDiv"></div>
+        <label for="payment">Remet de l'argent:</label>
+        <div id="paymentDiv"></div>   
+        <input type="button" id="pay" onclick="payment()" value="Payer"></td>
+    </table>
+    <div id="message"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
